@@ -1,0 +1,19 @@
+@import '../Utils/common';
+
+.form form {
+    padding: 1rem;
+    max-height: 100%;
+
+    footer {
+        color: $neutral-2;
+        font-size: 0.75rem;
+
+        p {
+            margin: 0;
+        }
+        a {
+            color: $primary-1;
+            text-decoration: none;
+        }
+    }
+}

@@ -1,0 +1,55 @@
+@import '../Components/Utils/common';
+
+.app {
+    display: flex;
+    overflow: visible;
+    height: 100%;
+    min-height: 700px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('bg-intro-desktop.png');
+    background-color: $primary-1;
+    background-attachment: fixed;
+}
+
+.app .app-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 75rem;
+    padding: 2rem;
+
+    section {
+        flex: 50%;
+        margin: 1rem;
+
+        h1 {
+            font-size: 3rem;
+            line-height: 1.2;
+            margin: 1.5rem 0;
+        }
+    }
+
+    .app-description {
+        display: flex;
+        align-items: center;
+    }
+
+    .app-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: $breakpoint-mobile) {
+
+    .app {
+        background-image: url('bg-intro-mobile.png');
+        min-height: 2000px;
+    }
+
+    .app .app-wrapper {
+        flex-direction: column;
+    }
+  }
+
