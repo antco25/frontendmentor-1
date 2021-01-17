@@ -1,5 +1,5 @@
 import './App.scss';
-import Card, { CardType } from '../Components/Card/Card'
+import Card from '../Components/Card/Card'
 import Form from '../Components/Form/Form'
 
 function App() {
@@ -17,8 +17,8 @@ function App() {
         </article>
       </section>
       <section className="app-form">
-        <Card type={CardType.Accent}>
-          <b>Try it for free for 7 days</b> then $20/mo. thereafter
+        <Card type={"accent"}>
+          <p className="form-header"><b>Try it for free for 7 days</b> then $20/mo. thereafter</p>
         </Card>
         <Form/>
       </section>

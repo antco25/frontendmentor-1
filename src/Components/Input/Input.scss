@@ -9,7 +9,7 @@
         font-family: inherit;
         outline: none;
 
-        &[type=text] {
+        &[type=text], &[type=password] {
             flex-grow: 1;
             border: none;
             color: $neutral-1;
@@ -50,7 +50,7 @@
             border-color: $primary-1;
             color: $primary-1;
 
-            [type=text] {
+            [type=text], [type=password] {
                 color: $primary-1;
             }
         }

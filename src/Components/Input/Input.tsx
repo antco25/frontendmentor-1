@@ -2,7 +2,7 @@ import { ChangeEvent, useState } from 'react'
 import './Input.scss';
 import iconError from './icon-error.svg'
 
-type InputType = "text" | "submit";
+type InputType = "text" | "password" | "submit";
 
 type InputProps = {
     id?: number,
@@ -38,7 +38,7 @@ const Input = ({ id, type, value, isError, errorMessage, onChange}: InputProps) 
     return (
         <div className="input">
             <div className={wrapperClass}>
-                <input type="text" placeholder={value} onFocus={onFocus} onBlur={onBlur} onChange={_onChange} />
+                <input type={type ? type : "text"} placeholder={value} onFocus={onFocus} onBlur={onBlur} onChange={_onChange} />
                 {isError ? <img src={iconError} /> : null}
             </div>
             {isError && errorMessage ? <p>{errorMessage}</p> : null}

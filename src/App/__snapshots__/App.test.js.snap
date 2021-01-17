@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="app"
+>
+  <div
+    className="app-wrapper"
+  >
+    <section
+      className="app-description"
+    >
+      <article>
+        <h1>
+          Learn to code by watching others
+        </h1>
+        <p>
+          See how experienced developers solve problems in real time. Watching scripted tutorials is great, but understanding how developers think is invaluable.
+        </p>
+      </article>
+    </section>
+    <section
+      className="app-form"
+    >
+      <div
+        className="card card-accent"
+      >
+        <p
+          className="form-header"
+        >
+          <b>
+            Try it for free for 7 days
+          </b>
+           then $20/mo. thereafter
+        </p>
+      </div>
+      <div
+        className="form"
+      >
+        <div
+          className="card card-default"
+        >
+          <form
+            onSubmit={[Function]}
+          >
+            <div
+              className="input"
+            >
+              <div
+                className="input-wrapper"
+              >
+                <input
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="First Name"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="input-wrapper"
+              >
+                <input
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Last Name"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="input-wrapper"
+              >
+                <input
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Email Address"
+                  type="text"
+                />
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <div
+                className="input-wrapper"
+              >
+                <input
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onFocus={[Function]}
+                  placeholder="Password"
+                  type="password"
+                />
+              </div>
+            </div>
+            <div
+              className="input"
+            >
+              <input
+                type="submit"
+                value="Claim your free trial"
+              />
+            </div>
+            <footer>
+              <p>
+                By clicking the button, you are agreeing to our 
+                <a
+                  href="#"
+                >
+                  Terms and Services
+                </a>
+              </p>
+            </footer>
+          </form>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

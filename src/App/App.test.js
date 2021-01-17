@@ -1,8 +1,16 @@
+import renderer from 'react-test-renderer'
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+it('renders correctly', () => {
+  const tree = renderer
+    .create(<App />)
+    .toJSON();
+  expect(tree).toMatchSnapshot();
+});
+
+test('renders header', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const headerText = screen.getByText(/Learn to code by watching others/);
+  expect(headerText).toBeInTheDocument();
 });

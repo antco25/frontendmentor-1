@@ -4,7 +4,6 @@
     display: flex;
     overflow: visible;
     height: 100%;
-    min-height: 700px;
     align-items: center;
     justify-content: center;
     background-image: url('bg-intro-desktop.png');
@@ -19,7 +18,7 @@
     padding: 2rem;
 
     section {
-        flex: 50%;
+        flex: 1;
         margin: 1rem;
 
         h1 {
@@ -38,18 +37,297 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        .form-header {
+            margin: 0;
+        }
     }
 }
 
+//1100px - 992px
+@media only screen and (max-width: $breakpoint-1) { 
+
+    .app {
+        min-height: 700px;
+    }
+    .app .app-wrapper .app-description article {
+        h1 {
+            font-size: $s-44;
+        }
+    }
+    
+    .app .app-wrapper .app-form {
+        .card {
+            padding: 1.2rem $s-16;
+        } 
+    }
+
+}
+
+//992px-768px
+@media only screen and (max-width: $breakpoint-2) { 
+
+    .app .app-wrapper {
+        padding: 1rem;
+
+        section {
+            margin: $s-12;
+        }
+    }
+
+    .app .app-wrapper .app-description article {
+        h1 {
+            font-size: $s-32;
+        }
+
+        p {
+            font-size: $s-14;
+        }
+    } 
+
+    .app .app-wrapper .app-form {
+        .card {
+            padding: $s-16 $s-10;
+        }
+
+        .form-header {
+            font-size: $s-14;
+            padding: 0 $s-10;
+        }
+
+        .form form {
+            padding: 1rem $s-10;
+
+            .input-wrapper {
+                padding: $s-10 $s-16;
+            }
+
+            input[type=text], input[type=password] {
+                font-size: $s-12;
+            }
+
+            input[type=submit] {
+                font-size: $s-16;
+                padding: $s-10 $s-16;
+            }
+        }
+    }
+}
+
+//768px-576px
+@media only screen and (max-width: $breakpoint-3) { 
+
+    .app {
+        min-height: 600px;
+    }
+    .app .app-wrapper {
+        section {
+            margin: $s-8;
+        }
+    }
+
+    .app .app-wrapper .app-description article {
+        h1 {
+            font-size: $s-24;
+        }
+
+        p {
+            font-size: $s-12;
+        }
+    } 
+
+    .app .app-wrapper .app-form {
+        .card {
+            padding: $s-16 $s-10;
+        }
+
+        .form-header {
+            font-size: $s-12;
+            padding: 0 $s-6;
+        }
+
+        .form form {
+            padding: $s-10 $s-6;
+
+            .input-wrapper {
+                padding: $s-8 $s-12;
+            }
+
+            input[type=text], input[type=password] {
+                font-size: $s-10;
+            }
+
+            input[type=submit] {
+                font-size: $s-14;
+                padding: $s-8 $s-12;
+            }
+
+            .input p {
+                font-size: $s-10;
+            }
+
+            .input .input-error {
+
+                input[type=text], input[type=password] {
+                    //Flex won't resize the input if I don't add a width
+                    width: 1rem; 
+                }
+
+                img {
+                    max-width: $s-18;
+                }
+            } 
+
+            footer p {
+                font-size: $s-10;
+            }
+        }
+    }
+
+}
+
+//576px-375px
+@media only screen and (max-width: $breakpoint-4) { 
+
+    .app {
+        min-height: 500px;
+    }
+    
+    .app .app-wrapper {
+        padding: $s-14;
+
+        section {
+            margin: $s-4;
+        }
+    }
+
+    .app .app-wrapper .app-description article {
+        h1 {
+            font-size: $s-16;
+        }
+
+        p {
+            font-size: $s-10;
+        }
+    } 
+
+    .app .app-wrapper .app-form {
+        .card {
+            padding: $s-10 $s-8;
+            margin-bottom: $s-24;
+        }
+
+        .form-header {
+            font-size: $s-10;
+        }
+
+        .form form {
+            padding: $s-10 $s-6;
+
+            .input-wrapper {
+                padding: $s-8 $s-6;
+            }
+
+            input[type=text], input[type=password] {
+                font-size: $s-8;
+                //Flex won't resize the input if I don't add a width
+                width: 1rem; 
+            }
+
+            input[type=submit] {
+                font-size: $s-10;
+                padding: $s-8;
+            }
+
+            .input p {
+                font-size: $s-8;
+            }
+
+            .input .input-error img {
+                max-width: $s-14;
+            }
+
+            footer p {
+                font-size: $s-8;
+            }
+        }
+    }
+
+}
+
+//375 and smaller
 @media only screen and (max-width: $breakpoint-mobile) {
 
     .app {
         background-image: url('bg-intro-mobile.png');
-        min-height: 2000px;
+        min-height: 900px;
+        min-width: 330px;
     }
 
     .app .app-wrapper {
         flex-direction: column;
+        padding: $s-14;
+
+        section {
+            margin-bottom: $s-18;
+        }
     }
-  }
+
+    .app .app-wrapper .app-description article {
+        text-align: center;
+
+        h1 {
+            font-size: $s-28;
+        }
+
+        p {
+            font-size: $s-14;
+        }
+    } 
+
+    .app .app-wrapper .app-form {
+        .card {
+            padding: $s-20 $s-12;
+            margin-bottom: $s-24;
+        }
+
+        .form-header {
+            font-size: $s-14;
+            padding: 0 $s-48;
+        }
+
+        .form form {
+            padding: $s-10 $s-6;
+
+            .input-wrapper {
+                padding: $s-10 $s-16;
+            }
+
+            input[type=text], input[type=password] {
+                font-size: $s-12;
+                //Flex won't resize the input if I don't add a width
+                width: 1rem; 
+            }
+
+            input[type=submit] {
+                font-size: $s-16;
+                padding: $s-10 $s-16;
+            }
+
+            .input p {
+                font-size: $s-12;
+            }
+
+            .input .input-error img {
+                max-width: unset;
+            }
+
+            footer p {
+                font-size: $s-12;
+            }
+        }
+    }
+}
+
+
 

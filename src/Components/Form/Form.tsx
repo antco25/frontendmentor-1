@@ -68,7 +68,7 @@ const Form = () => {
                     <Input id={0} type="text" value="First Name" isError={firstNameError} errorMessage="First Name cannot be empty" onChange={handleOnChange} />
                     <Input id={1} type="text" value="Last Name" isError={lastNameError} errorMessage="Last Name cannot be empty" onChange={handleOnChange} />
                     <Input id={2} type="text" value="Email Address" isError={emailError} errorMessage="Looks like this is not an email" onChange={handleOnChange} />
-                    <Input id={3} type="text" value="Password" isError={passwordError} errorMessage="Password cannot be empty" onChange={handleOnChange} />
+                    <Input id={3} type="password" value="Password" isError={passwordError} errorMessage="Password cannot be empty" onChange={handleOnChange} />
                     <Input type="submit" value="Claim your free trial" />
                     <footer>
                         <p>By clicking the button, you are agreeing to our <a href="#">Terms and Services</a></p>

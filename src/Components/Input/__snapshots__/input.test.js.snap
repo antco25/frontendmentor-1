@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="input"
+>
+  <div
+    className="input-wrapper"
+  >
+    <input
+      onBlur={[Function]}
+      onFocus={[Function]}
+      type="text"
+    />
+  </div>
+</div>
+`;
+
+exports[`renders correctly with type="submit" 1`] = `
+<div
+  className="input"
+>
+  <input
+    type="submit"
+  />
+</div>
+`;

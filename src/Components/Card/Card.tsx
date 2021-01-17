@@ -1,17 +1,14 @@
 import { FunctionComponent } from 'react';
 import './Card.scss';
 
-export enum CardType {
-    Default,
-    Accent
-}
+type CardType = "default" | "accent";
 
 type CardProps = {
     type? : CardType
 }
 
 function getClassName(type? : CardType) {
-    if (type === CardType.Accent)
+    if (type === "accent")
         return "card card-accent"
     else
         return "card card-default";
